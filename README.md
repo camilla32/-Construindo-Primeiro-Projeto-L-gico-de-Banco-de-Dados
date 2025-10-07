@@ -22,3 +22,14 @@ Etapas:
 
 Criação das tabelas para o banco de dados
 ------------
+
+Para a construção do banco de dados de ecommerce foram criada as tabelas cliente, fornecedor, vendedor,estoque, produto, pedido e outras que se relacionam a duas dessas criadas, como por exemplo a tabela produto/pedido.
+
+Inserção dos valores para cada tabela
+------------
+
+Os valores inseridos nesse banco de dados são ficticos , utlizados para embasar a etapa de recuperação de dados.
+
+Recuperação de dados a partir de consultas Sql
+-----------
+
