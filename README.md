@@ -18,5 +18,7 @@ Etapas:
 
 -Recuperação de dados a partir de consultas Sql.
 
+-Refinamento dos dados.
+
 Criação das tabelas para o banco de dados
 ------------
