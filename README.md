@@ -26,4 +26,9 @@ Para a construção do banco de dados de ecommerce foram criada as tabelas clien
 Recuperação de dados a partir de consultas Sql
 -----------
 
-Nessa etapa foi utilizado queries SQL
+Nessa etapa foi utilizado queries SQL, como SELECT, ORDER BY, GROUP BY, WHERE, COUNT , SUM e JOIN. Para levantar algumas informações como produto mais vendido e quantidade de clientes por pedido.
+
+Refinamento dos Dados
+--------------
+
+Foram acrescentadas as tabelas pagamento com mais de uma forma de cadastro, cliente PF E PJ, entrega com status e código de rastreio.
