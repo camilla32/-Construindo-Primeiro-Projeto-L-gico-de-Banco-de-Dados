@@ -1,0 +1,80 @@
+Queries no SQL
+
+select * from cliente c,pedido p where c.idcliente=idpedidocliente;
+
+idcliente
+Fname
+Minit
+Lname
+CPF
+Address
+idpedido
+idpedidocliente
+PedidoStatus
+PedidoDescriçao
+Frete
+PagamentoDinheiro
+
+1	Maria	M	Silva	12346789	Rua das flores-n29-centro	1	1	em processamento	Compra via aplucativo	NULL	1	
+2	joão	T	Silva	48346789	Rua dos carros-n39-centro	2	2	em processamento	Compra via aplucativo	50	0	
+3	Pedro	G	Santos	44346789	Rua das flores-n19-centro	3	3		                             NULL	NULL	1	
+4	Mariana	S	Silva	58346789	Rua das flores-n9-centro	4	4	em processamento	Compra via site web	150	0	
+
+
+select * from cliente c,pedido p where c.idcliente=idpedidocliente;
+
+select * from  cliente  
+       order by fname;
+	idcliente
+
+	idcliente
+Fname
+Minit
+Lname
+CPF
+Address
+2	joão	T	Silva	48346789	Rua dos carros-n39-centro				
+5	Laura	W	Borges	12346755	Avenida alameda-n29-centro				
+1	Maria	M	Silva	12346789	Rua das flores-n29-centro				
+4	Mariana	S	Silva	58346789	Rua das flores-n9-centro				
+3	Pedro	G	Santos	44346789	Rua das flores-n19-centro			
+6	thiago	F	Silva	32346789	Avenida atlantico-n29-centro			
+
+- QUANTIDADE DE CLIENTES POR PEDIDO:
+
+select c.fname,
+     count(DISTINCT c.idcliente) AS quantidade_pedidos
+     from cliente c 
+     join pedido p
+     on c.idcliente = p.idpedidocliente
+     group by c.fname
+     order by quantidade_pedidos DESC;
+
+fname
+quantidade_pedidos   1
+
+Pedro	1	
+joão	1	
+Maria	1	
+Mariana	1	
+
+-PRODUTO MAIS VENDIDO:
+
+select pr.pname,
+     sum(pp.prodpedquantidade) AS total_vendido
+     from produto pr
+     join produtopedido pp
+     on pr.idproduto = pp.idpoproduto
+     group by pr.pname
+     order by total_vendido DESC;
+
+pname
+total_vendido   1
+
+Fone de ou	2	
+Barbie Els	1	
+Body Carte	1	
+
+
+
+
