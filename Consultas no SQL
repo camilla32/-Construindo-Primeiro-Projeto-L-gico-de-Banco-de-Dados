@@ -24,7 +24,6 @@ PagamentoDinheiro
 
 select * from  cliente  
        order by fname;
-	idcliente
 
 	idcliente
 Fname
