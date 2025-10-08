@@ -21,7 +21,6 @@ PagamentoDinheiro
 4	Mariana	S	Silva	58346789	Rua das flores-n9-centro	4	4	em processamento	Compra via site web	150	0	
 
 
-select * from cliente c,pedido p where c.idcliente=idpedidocliente;
 
 select * from  cliente  
        order by fname;
